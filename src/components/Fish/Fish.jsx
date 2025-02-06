@@ -28,7 +28,7 @@ export default function Fish(props) {
             <strong>{currentLanguage==='ru'?'Водится на локациях: ':'Водиться на локаціях: '} </strong>
             {
               fishSpots.map((spot,index)=>{
-                return index===fishSpots.length-1?<Link to={`/spots/${spot.slug}`}>{spot.name}</Link>:<Link to={`/spots/${spot.slug}    `}>{`${spot.name}, `}</Link>
+                return index===fishSpots.length-1?<Link to={`/fishdnipro/spots/${spot.slug}`}>{spot.name}</Link>:<Link to={`/fishdnipro/spots/${spot.slug}`}>{`${spot.name}, `}</Link>
               })
             }
           </p>

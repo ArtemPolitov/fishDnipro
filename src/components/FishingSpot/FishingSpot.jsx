@@ -23,7 +23,7 @@ export default function FishingSpot(props) {
           </p>
           <p>
             <strong>{currentLanguage==='ru'?'Виды рыб на локации: ':'Види риб на локації: '} </strong>{spotFishes.map((fish,index)=>{
-            return index===spotFishes.length-1?<Link to={`/fishes/${fish.slug}`}>{fish.name.toLowerCase()}</Link>:<Link to={`/fishes/${fish.slug}`}>{`${fish.name.toLowerCase()}, `}</Link>
+            return index===spotFishes.length-1?<Link to={`/fishdnipro/fishes/${fish.slug}`}>{fish.name.toLowerCase()}</Link>:<Link to={`/fishdnipro/fishes/${fish.slug}`}>{`${fish.name.toLowerCase()}, `}</Link>
             })}
           </p>
         </div>
