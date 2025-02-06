@@ -1,0 +1,52 @@
+
+
+.top{
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top:0px;
+  width: 100%;
+  
+  
+  /*left: 441.5px;*/
+  background-color: var(--background-color);
+}
+
+.isBorderVisible{
+  box-shadow: var(--boxShadowTop); /* Тень снизу */
+}
+.title{
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.burgerWrapper{
+  display: none;
+}
+
+@media(max-width:1320px){
+  .title{
+    font-size: 25px;
+  }
+}
+
+
+@media(max-width:700px){
+  .title{
+    text-align: center;
+    line-height: 1.2;
+  }
+  .settingsContainer{
+    display: none;
+  }
+}
+
+@media(max-width:1070px){
+  .burgerWrapper{
+    display: block;
+  }
+}

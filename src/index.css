@@ -1,0 +1,38 @@
+#root{
+  height: 100%;
+  overflow-y: scroll; /* Или overflow-y: auto; */
+  overflow-x: hidden;
+}
+
+:root{
+  --background-color: rgb(255, 255, 255);
+  --text-color: black;
+  --vertical-line: black;
+  --outline: 1px solid black;
+  --border: 1px solid black;
+  --boxShadowTop: 0 1px 0 0 black;
+  --spanBg:black;
+  
+}
+
+
+body{
+  background-color: var(--background-color);
+  color: var(--text-color); 
+  font-family: "PT Serif", serif;
+  font-size: 17px;
+}
+
+body.darkTheme{
+  --background-color: rgb(58, 62, 76);
+  --text-color: rgb(255, 255, 255);
+  --vertical-line: rgb(255, 255, 255);
+  --outline: 1px solid rgb(255, 255, 255);
+  --border: 1px solid rgb(255, 255, 255);
+  --boxShadowTop: 0 1px 0 0 rgb(255, 255, 255);
+  --spanBg:white;
+}
+
+a:hover{
+  
+}

@@ -1,0 +1,9 @@
+.lightThemeLogo, .darkThemeLogo{
+  width: 35px;
+}
+
+@media (max-width:1150px) {
+  .lightThemeLogo, .darkThemeLogo{
+    width: 25px;
+  }
+}

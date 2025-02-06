@@ -1,0 +1,70 @@
+.sideBar{
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  position: fixed;
+  gap:10px;
+}
+
+
+
+ .fishItemWrap{
+ text-align: center;
+ font-size: 25px;
+
+}
+
+.fishItem {
+  
+  text-align: center;
+  width: 165px;
+  display: inline-block;
+  
+}
+
+.fishItemActive{
+  outline: var(--outline);
+}
+
+.fishItem:hover {
+  cursor: pointer;
+  outline: var(--outline);
+}
+
+.imgLogo{
+  width: 250px;
+  height: auto;
+}
+
+.verticalLine {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 0px;
+  width: 1px;
+  background-color: var(--vertical-line);
+}
+
+.settingsContainer{
+  display: none;
+}
+.mobileSideBar{
+  
+}
+
+@media (max-width:1070px) {
+  .sideBar{
+    display: none;
+  }
+  .settingsContainer{
+    display: block;
+  }
+
+}
+
+
+

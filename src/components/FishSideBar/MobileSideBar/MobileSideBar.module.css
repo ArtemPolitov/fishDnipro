@@ -1,0 +1,125 @@
+  .overlay{
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Начинается с верхней части экрана */
+    left: 0; /* Начинается с левой части экрана */
+    width: 100%; /* Занимает всю ширину экрана */
+    height: 100%; /* Занимает всю высоту экрана */
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.608);
+  }
+
+/* Скрыт на начальном экране */
+.mobileSidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  top: 0;
+  left: -220px; /* Начальное положение сайдбара за пределами экрана */
+  width: 220px;
+  background: white;
+  height: 100%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1100;
+  transition: transform 0.3s ease-in-out; /* Плавное движение */
+  overflow-y: auto;
+}
+
+/* При добавлении класса "open", сайдбар выезжает на экран */
+.mobileSidebar.open {
+  transform: translateX(220px); /* Перемещаем на экран */
+}
+
+.mobileSidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.mobileSidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
+
+.mobileSidebarDark{
+  background-color: rgb(58, 62, 76);
+}
+
+
+
+ .fishItemWrap{
+ text-align: center;
+ font-size: 25px;
+
+}
+
+.fishItem {
+  
+  text-align: center;
+  width: 165px;
+  display: inline-block;
+  
+}
+
+.fishItemActive{
+  outline: var(--outline);
+}
+
+.fishItem:hover {
+  cursor: pointer;
+  outline: var(--outline);
+}
+
+.imgLogo{
+  width: 150px;
+  height: auto;
+}
+
+
+
+.settingsContainer{
+  display: none;
+}
+
+.burgerWrapper{
+ padding-top: 9px;
+ padding-bottom: 4px;
+}
+
+.mobileSidebarTitle{
+  line-height: 1.2  ;
+}
+
+@media (max-width:700px) {
+  .mobileSidebar{
+    width: 180px;
+  }
+ .settingsContainer{
+  display: block;
+ } 
+ .mobileSidebarTitle{
+  font-size: 23px; 
+ }
+ .fishItemWrap{
+  font-size: 22px;
+ }
+
+}
+
+@media (min-width:1070px) {
+  .mobileSidebar{
+    display: none;
+  }
+  .overlay{
+    display: none;
+  }
+}
+
+
+
+
+
+
+

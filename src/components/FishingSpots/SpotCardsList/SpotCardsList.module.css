@@ -1,0 +1,10 @@
+.cardsList{
+  /*margin-top: 70px;*/
+  padding: 30px;
+}
+
+.cardsList ul{
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+}

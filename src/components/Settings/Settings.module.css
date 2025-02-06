@@ -1,0 +1,26 @@
+/*header{
+  display: flex;
+  height: 100px;
+  padding: 10px;
+  align-items: center;
+  gap:10px;
+  border: 1px solid black;
+  justify-content: center;
+}*/
+.settings{
+  display: flex;
+  gap:20px;
+}
+
+
+@media(max-width:1070px){
+  .settings{
+    gap:7px
+  }
+}
+
+@media (max-width:700px) {
+  .settings{
+    
+  }
+}

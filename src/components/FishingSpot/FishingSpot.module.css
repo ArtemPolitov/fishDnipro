@@ -1,0 +1,36 @@
+.spotDescription{
+  max-width: 95%;
+  text-align: center;
+}
+
+.spotInfo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.spotFish{
+  max-width:70% ;
+}
+
+.spotImgWrap{
+  width: 35%;
+  min-width: 200px;
+}
+.spotFish{
+  margin-top: -5px;
+}
+
+@media (max-width:1070px) {
+  .spotDescription{
+    font-size: 16px;
+  }
+}
+
+
+
+
+

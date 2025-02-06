@@ -1,0 +1,61 @@
+.language{
+  display: flex;
+  gap: 11px;
+}
+
+.langBtn{
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 21px;
+  color: var(--text-color);
+  min-width: 31px;
+  
+  
+}
+
+.activeBtn{
+  font-weight: 700;
+}
+
+.langBtn:hover{
+  cursor: pointer;
+}
+
+
+
+.middleLine{
+  content: "";  
+  width: 0.5px;
+  background-color: var(--vertical-line)
+}
+
+@media (max-width:1150px) {
+  .langBtn{
+    font-size: 17px;
+    min-width: 30px;
+  }
+  .language{
+    gap:1px;
+  }
+  
+  .middleLine{
+    right: 75px;
+    top: 25px;
+    bottom: 25px;
+  }
+}
+
+@media (max-width:1070px) {
+  .langBtn{
+    font-size: 17px;
+    min-width: 30px;
+  }
+  .language{
+    gap:1px;
+  }
+  
+  .middleLine{
+    right: 62px;
+    top: 25px;
+    bottom: 25px;
+  }
+}

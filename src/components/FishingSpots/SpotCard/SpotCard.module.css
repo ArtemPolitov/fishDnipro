@@ -1,0 +1,54 @@
+.spotCard{
+  display: flex;
+  padding: 0px;
+  width: 100%;
+  gap:20px;
+  align-items: center;
+}
+
+.imgWrap{
+  
+  
+  width: 25%;
+  min-width: 180px;
+}
+
+.cardText{
+  margin-top: -2px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap:5px;
+}
+
+.spotName{
+  margin-top:0px;
+  font-size: 20px;
+  font-weight:600;
+}
+
+
+.spotDescription{
+    font-size: 17px;
+}
+
+@media (max-width:1150px) {
+  .spotCard{
+    flex-direction: column;
+  }
+  .cardText{
+    text-align: center;
+    width: 100%;
+  }
+  .spotName{
+    font-size: 19px;
+  }
+  .spotDescription{
+    font-size: 16px;
+}
+  
+}
+
+
+
+
