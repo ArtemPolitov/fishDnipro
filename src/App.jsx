@@ -25,9 +25,9 @@ function App() {
       <FishSideBar data={currentLanguage==='ru'?fishDataRu:fishDataUa}/>
       <div className={s.content}>
         <Routes>
-            <Route path="/fishes/:fishSlug" element={<FishWrapper data={currentLanguage==='ru'?fishDataRu:fishDataUa}/>}/>
-            <Route path="/spots/:spotSlug" element={<SpotWrapper data={currentLanguage==='ru'?spotsDataRu:spotsDataUa}/>}/>
-            <Route path="/" element={<FishingSpots/>}/>
+            <Route path="fishdnipro/fishes/:fishSlug" element={<FishWrapper data={currentLanguage==='ru'?fishDataRu:fishDataUa}/>}/>
+            <Route path="fishdnipro/spots/:spotSlug" element={<SpotWrapper data={currentLanguage==='ru'?spotsDataRu:spotsDataUa}/>}/>
+            <Route path="fishdnipro/" element={<FishingSpots/>}/>
         </Routes>
       </div>
     </div>
