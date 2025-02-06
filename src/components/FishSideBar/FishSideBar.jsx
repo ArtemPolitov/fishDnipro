@@ -9,11 +9,11 @@ export default function FishSideBar(props) {
   return (
     <>
       <div className={s.sideBar}>
-        <Link to={'/'}><img src={logo} alt="" className={s.imgLogo}/></Link>
+        <Link to={'fishdnipro/'}><img src={logo} alt="" className={s.imgLogo}/></Link>
         <h2>Список рыб</h2>
         <ul className={s.fishList}>
           {props.data.map(fish=>(
-              <li key={fish.id} className={s.fishItemWrap}><NavLink to={`/fishes/${fish.slug}`} end className={({isActive})=> (isActive?`${s.fishItemActive} ${s.fishItem}` :s.fishItem)}>{fish.name}</NavLink></li>
+              <li key={fish.id} className={s.fishItemWrap}><NavLink to={`fishdnipro/fishes/${fish.slug}`} end className={({isActive})=> (isActive?`${s.fishItemActive} ${s.fishItem}` :s.fishItem)}>{fish.name}</NavLink></li>
           ))}
         </ul>
         <div className={s.verticalLine}></div>

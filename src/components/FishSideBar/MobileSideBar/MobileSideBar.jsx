@@ -21,7 +21,7 @@ export default function MobileSideBar({ props }) {
           className={`${s.mobileSidebar} ${isMobileSidebarOpen ? s.open : ''} ${theme === 'dark' ? s.mobileSidebarDark : ''}`}
           onClick={(e) => e.stopPropagation()}
         >
-          <Link to={'/'}><img src={logo} alt="" className={s.imgLogo} /></Link>
+          <Link to={'fishdnipro/'}><img src={logo} alt="" className={s.imgLogo} /></Link>
           <div className={s.burgerWrapper} onClick={closeMobileSidebar}><Burger /></div>
           <div className={s.settingsContainer}>
             <Settings />
@@ -30,7 +30,7 @@ export default function MobileSideBar({ props }) {
           <ul className={s.fishList}>
             {props.data.map(fish => (
               <li key={fish.id} className={s.fishItemWrap} onClick={closeMobileSidebar}>
-                <Link to={`/fishes/${fish.slug}`} end className={({ isActive }) => (isActive ? `${sfishItemActive} ${s.fishItem}` : s.fishItem)}>
+                <Link to={`fishdnipro/fishes/${fish.slug}`} end className={({ isActive }) => (isActive ? `${sfishItemActive} ${s.fishItem}` : s.fishItem)}>
                   {fish.name}
                 </Link>
               </li>
