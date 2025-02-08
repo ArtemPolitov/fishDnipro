@@ -1,20 +1,15 @@
 import React, { useEffect } from 'react'
-
 import closeIcon from '../../../assets/images/close_icon.png';
 import leftArrow from '../../../assets/images/arrow_left.png';
 import rightArrow from '../../../assets/images/arrow_right.png';
 import s from './FishingSpotGallery.module.css'
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
-import testImg from '../../../assets/images/spots/2/2.jpg';
 
 export default function FishingSpotGallery({spotId}) {
-  //const [isModalVisible,setIsModalVisible]=useState(false);
   const modalRoot = document.getElementById('modal-root');
   const [isOpen,setIsOpen] = useState(false);
   const [selectedImg,setSelectedImg] = useState(null);
-  const [prevImg,setPrevImg] = useState(null);
-  const [nextImg,setNextImg] = useState(null);
   const [imageUrls, setImageUrls] = useState([]);
 
   useEffect(()=>{
@@ -38,9 +33,8 @@ export default function FishingSpotGallery({spotId}) {
     setIsOpen(true);
     let imgSrc = event.target.dataset.src;
     setSelectedImg(imgSrc);
-    
-    
   }
+
   function closeModal(){
     setSelectedImg(null);
     setIsOpen(false);
@@ -48,12 +42,12 @@ export default function FishingSpotGallery({spotId}) {
 
   function hasPrevImg(url) {
     const index = imageUrls.indexOf(url);
-    return index > 0; // Есть предыдущий элемент, если индекс больше 0
+    return index > 0; 
   }
   
   function hasNextImg(url) {
     const index = imageUrls.indexOf(url);
-    return index >= 0 && index < imageUrls.length - 1; // Проверяем, есть ли следующий элемент
+    return index >= 0 && index < imageUrls.length - 1;
   }
 
   function openPrevImg() {
@@ -74,8 +68,6 @@ export default function FishingSpotGallery({spotId}) {
     }
     setIsOpen(true);
   }
-
-
 
   return (
     <div className={s.FishingSpotGalleryRow}>

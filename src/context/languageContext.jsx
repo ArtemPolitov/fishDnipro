@@ -18,10 +18,6 @@ export function LanguageProvider({children}){
   function setUa(){
     setLanguage('ua');
   }
-  
-  /*function toggleLanguage(){
-    setLanguage(prev=>(prev==='ru'?'ua':'ru'))
-  }*/
 
   return <LanguageContext.Provider value={{currentLanguage,setRu,setUa}}>{children}</LanguageContext.Provider>
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import lightThemeLogo from '../../../assets/images/theme/darkTheme.png';
 import darkThemeLogo from '../../../assets/images/theme/lightTheme.png';
 import s from './Theme.module.css';

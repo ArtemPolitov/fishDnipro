@@ -1,6 +1,5 @@
 import React, { useEffect,useState } from 'react';
 import s from './SpotCard.module.css';
-import fishes from '../../../data/fish.js';
 import fishesRu from '../../../locales/ru/fish.js'
 import fishesUa from '../../../locales/ua/fish.js'
 import { Link } from 'react-router-dom';
@@ -10,7 +9,6 @@ export default function SpotCard({img,name,description,fishId, slug}) {
   const[image,setImage]=useState(null);
   useEffect(()=>{
     let isMounted = true;
-
     const loadImage = async () => {
       const module = await import(`../../../assets/images/spots/${img}.jpg`);
       if (isMounted) {

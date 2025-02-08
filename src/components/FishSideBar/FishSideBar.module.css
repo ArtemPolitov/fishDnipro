@@ -1,5 +1,4 @@
 .sideBar{
-
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -9,8 +8,6 @@
   gap:10px;
 }
 
-
-
  .fishItemWrap{
  text-align: center;
  font-size: 25px;
@@ -18,7 +15,6 @@
 }
 
 .fishItem {
-  
   text-align: center;
   width: 165px;
   display: inline-block;
@@ -52,9 +48,6 @@
 .settingsContainer{
   display: none;
 }
-.mobileSideBar{
-  
-}
 
 @media (max-width:1070px) {
   .sideBar{
@@ -63,7 +56,6 @@
   .settingsContainer{
     display: block;
   }
-
 }
 
 

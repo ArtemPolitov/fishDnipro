@@ -6,7 +6,7 @@ import { useMobileSidebar } from '../../context/mobileSidebarContext';
 import Burger from './Burger/Burger';
 
 export default function TopFrame(props) {
-  const {isMobileSidebarOpen,openMobileSidebar,closeMobileSidebar} = useMobileSidebar()
+  const {openMobileSidebar} = useMobileSidebar()
 
   const[isBorderVisible,setIsBorderVisible]=useState(true);
   useEffect(()=>{

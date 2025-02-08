@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import SpotCard from '../SpotCard/SpotCard'
 import s from './SpotCardsList.module.css'
-import spots from '../../../data/spots';
 import spotsRu from '../../../locales/ru/spots'
 import spotsUa from '../../../locales/ua/spots'
 import { useLanguage } from '../../../context/languageContext';

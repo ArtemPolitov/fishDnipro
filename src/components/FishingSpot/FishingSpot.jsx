@@ -1,7 +1,6 @@
 import React from 'react'
 import TopFrame from '../TopFrame/TopFrame'
 import s from './FishingSpot.module.css'
-import fishes from '../../data/fish'
 import fishesRu from '../../locales/ru/fish'
 import fishesUa from '../../locales/ua/fish'
 import { Link } from 'react-router-dom'

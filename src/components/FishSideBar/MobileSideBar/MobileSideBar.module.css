@@ -1,14 +1,13 @@
   .overlay{
-    position: fixed; /* Фиксированное позиционирование */
-    top: 0; /* Начинается с верхней части экрана */
-    left: 0; /* Начинается с левой части экрана */
-    width: 100%; /* Занимает всю ширину экрана */
-    height: 100%; /* Занимает всю высоту экрана */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%; 
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.608);
   }
 
-/* Скрыт на начальном экране */
 .mobileSidebar {
   position: fixed;
   display: flex;
@@ -16,20 +15,19 @@
   align-items: center;
   gap: 10px;
   top: 0;
-  left: -220px; /* Начальное положение сайдбара за пределами экрана */
+  left: -220px; 
   width: 220px;
   background: white;
   height: 100%;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1100;
-  transition: transform 0.3s ease-in-out; /* Плавное движение */
+  transition: transform 0.3s ease-in-out; 
   overflow-y: auto;
 }
 
-/* При добавлении класса "open", сайдбар выезжает на экран */
 .mobileSidebar.open {
-  transform: translateX(220px); /* Перемещаем на экран */
+  transform: translateX(220px); 
 }
 
 .mobileSidebar::-webkit-scrollbar {
@@ -41,26 +39,19 @@
   border-radius: 5px;
 }
 
-
-
 .mobileSidebarDark{
   background-color: rgb(58, 62, 76);
 }
 
-
-
- .fishItemWrap{
+.fishItemWrap{
  text-align: center;
  font-size: 25px;
-
 }
 
 .fishItem {
-  
   text-align: center;
   width: 165px;
   display: inline-block;
-  
 }
 
 .fishItemActive{
@@ -76,8 +67,6 @@
   width: 150px;
   height: auto;
 }
-
-
 
 .settingsContainer{
   display: none;
@@ -105,7 +94,6 @@
  .fishItemWrap{
   font-size: 22px;
  }
-
 }
 
 @media (min-width:1070px) {

@@ -8,8 +8,6 @@
   font-size: 21px;
   color: var(--text-color);
   min-width: 31px;
-  
-  
 }
 
 .activeBtn{
@@ -19,8 +17,6 @@
 .langBtn:hover{
   cursor: pointer;
 }
-
-
 
 .middleLine{
   content: "";  
@@ -52,7 +48,6 @@
   .language{
     gap:1px;
   }
-  
   .middleLine{
     right: 62px;
     top: 25px;

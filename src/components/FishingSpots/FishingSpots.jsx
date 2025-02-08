@@ -1,6 +1,5 @@
-import React, { useEffect,useState } from 'react'
+import React from 'react'
 import s from './FishingSpots.module.css'
-import Settings from '../Settings/Settings'
 import SpotCardsList from './SpotCardsList/SpotCardsList' 
 import TopFrame from '../TopFrame/TopFrame'
 import { useLanguage } from '../../context/languageContext'

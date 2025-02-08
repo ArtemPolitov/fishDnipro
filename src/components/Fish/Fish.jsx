@@ -11,9 +11,6 @@ import { useLanguage } from '../../context/languageContext';
 export default function Fish(props) {
   const {currentLanguage} = useLanguage();
   const fishSpots = currentLanguage==='ru'?spotsRu:spotsUa;
-  //let fishSpots = spots.filter(spot=>props.fish.fishing_spots.includes(spot.name));
-
-
 
   return (
     <>
